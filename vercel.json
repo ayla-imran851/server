@@ -1,0 +1,9 @@
+{
+    "routes": [
+      {
+        "src": "/tiktok-developers-site-verification=w7WLLN8pB1vpyt8JsSlgOtEVo0qDfLPj",
+        "dest": "/"
+      }
+    ]
+  }
+  
