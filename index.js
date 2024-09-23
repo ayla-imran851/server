@@ -52,17 +52,12 @@ const app = express();
 app.use(express.static("public"));
 
 // Serve TikTok verification file
-app.get(
-  "/tiktok-developers-site-verification=w7WLLN8pB1vpyt8JsSlgOtEVo0qDfLPj",
-  (req, res) => {
-    res.sendFile(
-      path.resolve(
-        __dirname,
-        "tiktok-developers-site-verification=w7WLLN8pB1vpyt8JsSlgOtEVo0qDfLPj.txt"
-      )
-    );
-  }
-);
+// app.get(
+//   "/tiktok-developers-site-verification=w7WLLN8pB1vpyt8JsSlgOtEVo0qDfLPj",
+//   (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "privacy-policy.html"));
+//   }
+// );
 
 // Serve the Privacy Policy HTML file
 app.get("/privacy-policy", (req, res) => {
